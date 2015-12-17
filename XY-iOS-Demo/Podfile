@@ -1,0 +1,17 @@
+platform :ios, '8.0'
+
+pod 'AFNetworking'
+pod 'XLForm'
+
+target 'XY-iOS-Demo' do
+
+end
+
+target 'XY-iOS-DemoTests' do
+
+end
+
+target 'XY-iOS-DemoUITests' do
+
+end
+
