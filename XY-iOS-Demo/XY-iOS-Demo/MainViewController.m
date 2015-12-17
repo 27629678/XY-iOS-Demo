@@ -23,6 +23,38 @@
 - (void)installBasicUIElements
 {
     self.title = @"welcome";
+    
+    [self constructMainEntryTableView];
+}
+
+- (void)constructMainEntryTableView
+{
+    XLFormDescriptor* form = [XLFormDescriptor formDescriptor];
+    XLFormRowDescriptor* row;
+    XLFormSectionDescriptor* section;
+    
+    // section UIKit
+    section = [XLFormSectionDescriptor formSectionWithTitle:@"UIKit"];
+    
+    // row UITextField
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"UIKit.TextField"
+                                                rowType:XLFormRowDescriptorTypeSelectorPush
+                                                  title:@"UITextField"];
+    [section addFormRow:row];
+    [form addFormSection:section];
+    
+    // section 3rd Party
+    section = [XLFormSectionDescriptor formSectionWithTitle:@"3rd Party"];
+    
+    // row XLForm
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"3rdParty.XLForm"
+                                                rowType:XLFormRowDescriptorTypeSelectorPush
+                                                  title:@"XLForm"];
+    [section addFormRow:row];
+    
+    [form addFormSection:section];
+    
+    self.form = form;
 }
 
 @end
