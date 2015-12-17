@@ -34,22 +34,21 @@
     XLFormSectionDescriptor* section;
     
     // section UIKit
-    section = [XLFormSectionDescriptor formSectionWithTitle:@"UIKit"];
+    section = [XLFormSectionDescriptor formSection];
     
     // row UITextField
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"UIKit.TextField"
-                                                rowType:XLFormRowDescriptorTypeSelectorPush
-                                                  title:@"UITextField"];
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"UIKit"
+                                                rowType:XLFormRowDescriptorTypeButton
+                                                  title:@"UIKit"];
+    row.action.formSegueIdentifier = @"UIKitIdentifier";
     [section addFormRow:row];
     [form addFormSection:section];
     
-    // section 3rd Party
-    section = [XLFormSectionDescriptor formSectionWithTitle:@"3rd Party"];
-    
     // row XLForm
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"3rdParty.XLForm"
-                                                rowType:XLFormRowDescriptorTypeSelectorPush
-                                                  title:@"XLForm"];
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"3rdParty"
+                                                rowType:XLFormRowDescriptorTypeButton
+                                                  title:@"3rdParty"];
+    row.action.formSegueIdentifier = @"3rdPartyIdentifier";
     [section addFormRow:row];
     
     [form addFormSection:section];

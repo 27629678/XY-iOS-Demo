@@ -19,10 +19,51 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cMa-44-B6O"/>
+                    <connections>
+                        <segue destination="eZH-wX-3kT" kind="push" identifier="UIKitIdentifier" id="1Jw-FR-Sj5"/>
+                        <segue destination="aPt-0b-XeP" kind="show" identifier="3rdPartyIdentifier" id="pfh-xq-mRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="233"/>
+            <point key="canvasLocation" x="946" y="233"/>
+        </scene>
+        <!--Third Party View Controller-->
+        <scene sceneID="h8w-cr-BvH">
+            <objects>
+                <viewController id="aPt-0b-XeP" customClass="ThirdPartyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mX1-Al-yIc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fkr-DV-hOe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S3c-tD-BcH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Af-p7-KDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="233"/>
+        </scene>
+        <!--Kit View Controller-->
+        <scene sceneID="a3B-zQ-H4K">
+            <objects>
+                <viewController id="eZH-wX-3kT" customClass="UIKitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UG0-fg-EdQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PZe-YB-AhF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92q-70-xTo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xQ0-fi-olY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaE-Q6-kBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="-611"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sZd-QB-Soc">
