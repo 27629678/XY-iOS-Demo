@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A30C6A5C36878468757689D0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E706149A709BBE9CF551CB3F /* libPods.a */; };
+		DA250B8D1C522DA90012B03E /* XYUrlQueryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA250B8C1C522DA90012B03E /* XYUrlQueryParser.m */; };
 		DAB68D8B1C229A9D00322C4C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB68D8A1C229A9D00322C4C /* MainViewController.m */; };
 		DAB68D911C22A52800322C4C /* UITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB68D901C22A52800322C4C /* UITextFieldViewController.m */; };
 		DAB68D941C22A58400322C4C /* UIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB68D931C22A58400322C4C /* UIKitViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		2A2B88BF24467CAFAC581B95 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8054BE62964EFB68D8B16034 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DA250B8B1C522DA90012B03E /* XYUrlQueryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUrlQueryParser.h; sourceTree = "<group>"; };
+		DA250B8C1C522DA90012B03E /* XYUrlQueryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUrlQueryParser.m; sourceTree = "<group>"; };
 		DAB68D891C229A9D00322C4C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DAB68D8A1C229A9D00322C4C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DAB68D8F1C22A52800322C4C /* UITextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewController.h; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA250B871C522C2F0012B03E /* URLParser */ = {
+			isa = PBXGroup;
+			children = (
+				DA250B8B1C522DA90012B03E /* XYUrlQueryParser.h */,
+				DA250B8C1C522DA90012B03E /* XYUrlQueryParser.m */,
+			);
+			path = URLParser;
+			sourceTree = "<group>";
+		};
 		DAB68D8C1C229AC400322C4C /* XYStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		DAB68D8D1C22A4EF00322C4C /* XYDemos */ = {
 			isa = PBXGroup;
 			children = (
+				DA250B871C522C2F0012B03E /* URLParser */,
 				DAB68D951C22A91B00322C4C /* 3rdParty */,
 				DAB68D8E1C22A4EF00322C4C /* UIKit */,
 				DAB68D921C22A58400322C4C /* UIKitViewController.h */,
@@ -394,6 +407,7 @@
 			files = (
 				DAB68D941C22A58400322C4C /* UIKitViewController.m in Sources */,
 				DAB68D981C22A92F00322C4C /* ThirdPartyViewController.m in Sources */,
+				DA250B8D1C522DA90012B03E /* XYUrlQueryParser.m in Sources */,
 				DAB68D911C22A52800322C4C /* UITextFieldViewController.m in Sources */,
 				DAFBBF2C1C229523009C01A5 /* AppDelegate.m in Sources */,
 				DAB68D8B1C229A9D00322C4C /* MainViewController.m in Sources */,
